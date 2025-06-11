@@ -30,11 +30,14 @@ namespace LoggingKata.Test
             //       Each "line" from your .csv file
             //       represents a TacoBell location
 
-            //Arrange
+            //Arrange - write the code we need in order to call the method we want to test
+            var tacoParserInstance = new TacoParser();
 
             //Act
+            var actual = tacoParserInstance.Parse(line).Location.Longitude;
 
             //Assert
+            Assert.Equal(expected, actual);
         }
 
 
