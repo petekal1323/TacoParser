@@ -59,7 +59,7 @@ namespace LoggingKata
                 }
             }
             
-            logger.LogInfo($"{"The two Taco Bells that are the farthest apart are: {tacoBell.Name} and {tacoBell2.Name}.");
+            logger.LogInfo($"{tacoBell.Name} and {tacoBell2.Name} are the two Taco Bells that are the farthest apart from one another.");
             
         }
     }
